@@ -10,7 +10,6 @@ public class mininnumbericolumn {
         //6   1   9
 
 
-
         int abc[][] = {{2, 4, 5}, {3, 7, 10}, {6, 1, 9}};
         int mini = abc[0][0];
         int mincolumn=0;

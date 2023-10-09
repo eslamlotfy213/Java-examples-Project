@@ -16,6 +16,7 @@ public class Constractor {
 
    // parameterized
     public Constractor(int a , int b){
+
         System.out.println("i m on the parameterized constractor ...");
     }
 
