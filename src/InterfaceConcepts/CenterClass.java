@@ -17,12 +17,12 @@ public class CenterClass implements  CenterTrafficInterface,CenterTrafficInterfa
 
     @Override
     public void greenGo() {
+
         System.out.println("greenGo");
     }
 
     @Override
     public void redGo() {
-
 
         System.out.println("redGo");
     }
@@ -32,4 +32,5 @@ public class CenterClass implements  CenterTrafficInterface,CenterTrafficInterfa
 
         System.out.println("simple");
     }
+
 }
