@@ -1,3 +1,5 @@
+package TAU;
+
 public class avgExample {
 
 
