@@ -1,0 +1,10 @@
+
+//oldMethodChaining//
+you have oldMethodChaining
+replace "void" -> "MethodChaining" + return this;
+you have main
+        oldMethodChaining old = new oldMethodChaining();
+        old.a1().a2().a3();
+
+
+
