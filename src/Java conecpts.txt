@@ -1,0 +1,189 @@
+304. Date class concepts
+data d = new data();
+
+simpleDataformat sdf = new simpleDataformat("M/d/yyyy");
+system.out.println(sdf.format(d));
+system.out.println(d.toString());
+-----------------------------------------------------------------------------------------------------------------
+305. working with calendar objects in java
+Calender cal = Calender.getInstance();
+SimpleDataFormar sd = new SimpleDataFormar("M/d/yyyy hh:mm:ss");
+sd.format(sd.format(cal.getTime()));
+cal.get(Calender.Day_OF_Month);
+cal.get(Calender.Day_OF_WEEK_IN_Month);
+cal.get(Calender.AM_PM);
+-----------------------------------------------------------------------------------------------------------------
+306. How constructor play a crucial role
+307. Types of constructors and their usage
+
+You can learn more about Access modifiers in java from below link
+http://www.javatpoint.com/access-package coreJava;
+
+public class constructDemo { // Default public constructDemo() { System.out.println(" I am in the constructor"); System.out.println(" I am in the constructor lecture 1"); //  } // Parameterized constructor public constructDemo(int a, int b) { System.out.println(" I am in the parameterized constructor"); int c=a+b; System.out.println(c); } public constructDemo(String str) { System.out.println(str); }
+ public void getdata() { System.out.println("I am the method"); } //will not return values //name of constructor should be the class name
+public static void main(String[] args) { // TODO Auto-generated method stub constructDemo cd= new constructDemo(); constructDemo cds= new constructDemo("hello"); constructDemo c= new constructDemo(4,5); // compiler will call implict constructor if you have not defined constructor block //when ever you create an object constructor is called //block of code when ever an object is created }
+
+}
+
+package coreJava;
+
+public class constructDemo { // Default public constructDemo() { System.out.println(" I am in the constructor"); System.out.println(" I am in the constructor lecture 1"); //  } // Parameterized constructor public constructDemo(int a, int b) { System.out.println(" I am in the parameterized constructor"); int c=a+b; System.out.println(c); } public constructDemo(String str) { System.out.println(str); } public void getdata() { System.out.println("I am the method"); } //will not return values //name of constructor should be the class name
+
+public static void main(String[] args) { // TODO Auto-generated method stub constructDemo cd= new constructDemo(); constructDemo cds= new constructDemo("hello"); constructDemo c= new constructDemo(4,5); // compiler will call implict constructor if you have not defined constructor block //when ever you create an object constructor is called //block of code when ever an object is created }
+
+}
+
+-----------------------------------------------------------------------------------------------------------------
+309. What is super keyword ?
+// dh class parent
+public class parent {
+string name = "Rahul";
+
+}
+
+
+// dh class childdemo
+public class childdemo extens parent {
+
+string name = "QAclick";
+
+public void getStringdata()
+{
+    system.out.println(name);
+    system.out.println(super.name);
+}
+
+public static void main ()
+{
+
+childdemo c = new childdemo();
+    c.getStringdata();
+}
+
+}
+
+============Result======================
+QAclick
+Rahul
+
+
+--------------------------------------------------------------------------------------------------------------------------
+311. importance of this keyword
+
+	//this keyword demo
+	package coreJava;public class thisDemo {
+
+	int a= 2;
+
+	 public void getData()
+	 {
+	int a= 3;
+	int b=a+this.a;
+	System.out.println(a);
+	System.out.println(this.a);
+	System.out.println(b);
+
+
+	// this refers to curent object- object scope lies in class level
+	}
+	//
+
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+
+	thisDemo td=new thisDemo();
+	td.getData();
+	}
+
+	}
+--------------------------------------------------------------------------------------------------------------------------
+312. Static and Non Static Importance in Java
+
+what are instance variables ? //instance variables not shared every time whernever you created object 
+what are local variables?
+what are class varibles ?
+user of static keyword in java  
+importance of static methods and static  variables 
+how static blocks are defined?
+
+
+public class StaticVar{
+	string name;
+	string addrss;
+	strig city;
+
+
+    static {
+        city="Bangalore";
+        i=0;		 
+	}
+
+
+	StaticVar(String name , String address, String city)
+	{
+       this.name= name;
+	   this.address=address;
+	   this.city=city;
+	}
+
+
+   public void getaddress()
+   {
+   system.out.println(address);
+   }
+
+	public static void main()
+	{
+	  StaticVar obj = new StaticVar("bob","Ma,"balanak");
+	  obj.getaddress();
+	}
+
+}
+--------------------------------------------------------------------------------------------
+313. Final keyword in Java  
+// use to restrict your access 
+// use to restrict method  can't be overrride
+// use to restric class can't be inhertied
+
+final class
+// class name as final ... that means you cannot extend that class
+class finaldemo{
+
+    final int i=4;  // constant  variables 
+	i=5;  // get error ........................
+
+}
+--------------------------------------------------------------------------
+318. Different kind of exceptions
+
+int a=4;
+try catch mechanism 
+
+int b=7;
+int c=0;
+try{
+	int k=b/c; //
+     public void getData()
+		{
+		 system.out.println(k);
+		}	 
+	}catch(Exception e)
+	{
+
+
+	}
+---------------------------------------------------------------------
+319. Try catch Mechanism to handle exceptions
+
+
+ArithmeticException et 
+indexOutOfBoundException 
+--------------------------------------------------------------------------
+320. Importance of finally block in java
+
+
+	
+	
+	
+	
